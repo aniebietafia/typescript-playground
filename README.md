@@ -1,1 +1,1 @@
-# TypeScript Basics
+# typescript-playground
