@@ -1,0 +1,15 @@
+{
+  "name": "ts-fundamentals",
+  "packageManager": "yarn@4.0.2",
+  "volta": {
+    "node": "20.10.0",
+    "yarn": "4.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "yarn tsc"
+  }
+}
