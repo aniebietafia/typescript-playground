@@ -5,6 +5,7 @@ const personInfo = {
   role: "Backend Developer",
   stack: ["Nodejs", "Javascript", "Typescript", "Postgres", "Mongodb"],
   startYear: 2022,
+  age: 32,
 };
 
 let person: {
@@ -24,8 +25,10 @@ function printPerson(person: {
   startYear: number;
   age?: number;
 }) {
-  let output = `${person.firstName} ${person.lastName} is a ${person.role}`;
-  if (typeof person.age !== "undefined") output += `${person.age} years old.`;
+  let output = `${person.firstName} ${person.lastName} is a ${person.role}.`;
+  if (typeof person.age === "number")
+    output += ` He is ${person.age} years old.`;
+  console.log(output);
 }
 
 printPerson(personInfo);
