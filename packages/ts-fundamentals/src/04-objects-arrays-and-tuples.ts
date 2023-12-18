@@ -5,7 +5,6 @@ const personInfo = {
   role: "Backend Developer",
   stack: ["Nodejs", "Javascript", "Typescript", "Postgres", "Mongodb"],
   startYear: 2022,
-  age: 32,
 };
 
 let person: {
@@ -32,3 +31,14 @@ function printPerson(person: {
 }
 
 printPerson(personInfo);
+
+// Excess Property Checking
+const person2 = {
+  firstName: "James",
+  lastName: "Johnson",
+  role: "Data Scientist",
+  stack: ["Python"],
+  startYear: 2022,
+  race: "African",
+};
+printPerson(person2);
