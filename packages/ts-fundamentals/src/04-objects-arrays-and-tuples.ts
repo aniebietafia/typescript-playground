@@ -1,5 +1,5 @@
 // Objects
-const info = {
+const personInfo = {
   firstName: "Aniebiet",
   lastName: "Afia",
   role: "Backend Developer",
@@ -22,8 +22,10 @@ function printPerson(person: {
   role: string;
   stack: string[];
   startYear: number;
+  age?: number;
 }) {
-  console.log(`${person.firstName} ${person.lastName} is a ${person.role}`);
+  let output = `${person.firstName} ${person.lastName} is a ${person.role}`;
+  if (typeof person.age !== "undefined") output += `${person.age} years old.`;
 }
 
-printPerson(info);
+printPerson(personInfo);
