@@ -37,3 +37,11 @@ grades.forEach((num) => {
 });
 
 console.log(grades);
+
+// Function arguments and return types
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
+
+const result = addNumbers(2, 3);
+const promise = new Promise(result);
