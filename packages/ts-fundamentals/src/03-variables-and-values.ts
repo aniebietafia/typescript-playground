@@ -39,9 +39,13 @@ grades.forEach((num) => {
 console.log(grades);
 
 // Function arguments and return types
-function addNumbers(a: number, b: number): number {
-  return a + b;
+function addNumbers(a: number, b: number): number | string {
+  const randomNumber = Math.random();
+  const output =
+    randomNumber < 0.5 ? a + b : `greater than 0.5: ${randomNumber}`;
+  return output;
 }
 
 const result = addNumbers(2, 3);
-const promise = new Promise(result);
+console.log(result);
+// const promise = new Promise(result);
