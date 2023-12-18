@@ -42,3 +42,13 @@ const person2 = {
   race: "African",
 };
 printPerson(person2);
+
+// Index Signatures
+interface Person {
+  firstName: string;
+  lastName: string;
+  role: string;
+  stack: string[];
+  startYear: number;
+  [key: string]: any;
+}
