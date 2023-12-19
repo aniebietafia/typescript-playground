@@ -66,3 +66,27 @@ phones.home1;
 // Array Types
 const frontend: string[] = ["vue", "js", "react", "angular"];
 const backend: Array<string> = ["go", "nodejs", "ts", "python", "ruby"];
+
+const nobelAwards = [
+  {
+    category: "Peace",
+    year: 2017,
+    winner: "Barack Obama",
+  },
+  {
+    category: "Literature",
+    year: 2010,
+    winner: "Wole Soyinka",
+  },
+  {
+    category: "Science",
+    year: 2023,
+    winner: "TBD",
+  },
+];
+nobelAwards.push({ category: "1", year: 2, winner: "3" });
+
+// Tuples
+
+let car: [number, string, string] = [2002, "Toyota", "Corolla"];
+const [year, make, model] = car; // Destructuring
