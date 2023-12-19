@@ -94,9 +94,9 @@ const [year, make, model] = car; // Destructuring
 // car = [2023, 'Toyota', 'Corolla', 'extra'] // Too many elements
 
 // `readonly` tuples
-const numPair: [number, number] = [4, 5];
+const numPair: readonly [number, number] = [4, 5];
 // const numTriplet: [number, number, number] = [7]
 
 numPair.length;
-numPair.push(6);
-console.log(numPair);
+// numPair.push(6);
+console.log(numPair.length);
