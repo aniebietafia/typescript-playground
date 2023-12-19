@@ -100,3 +100,9 @@ const numPair: readonly [number, number] = [4, 5];
 numPair.length;
 // numPair.push(6);
 console.log(numPair.length);
+
+let twoD: number[][] = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+]; // 2-dimensional array
