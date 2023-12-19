@@ -62,3 +62,7 @@ const phones: {
   fax: { country: "+234", area: "809", number: "819-4719" },
 };
 phones.home1;
+
+// Array Types
+const frontend: string[] = ["vue", "js", "react", "angular"];
+const backend: Array<string> = ["go", "nodejs", "ts", "python", "ruby"];
