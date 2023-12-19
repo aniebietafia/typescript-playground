@@ -90,3 +90,5 @@ nobelAwards.push({ category: "1", year: 2, winner: "3" });
 
 let car: [number, string, string] = [2002, "Toyota", "Corolla"];
 const [year, make, model] = car; // Destructuring
+// car = ['Chevrolet', 2023, 'Highlander'] // Wrong convention
+// car = [2023, 'Toyota', 'Corolla', 'extra'] // Too many elements
