@@ -44,11 +44,21 @@ const person2 = {
 printPerson(person2);
 
 // Index Signatures
-interface Person {
-  firstName: string;
-  lastName: string;
-  role: string;
-  stack: string[];
-  startYear: number;
-  [key: string]: any;
-}
+// const phones = {
+//   home: { country: "+234", area: "806", number: "758-1927" },
+//   work: { country: "+234", area: "802", number: "787-2415" },
+//   fax: { country: "+234", area: "809", number: "819-4719" },
+// };
+
+const phones: {
+  [k: string]: {
+    country: string;
+    area: string;
+    number: string;
+  };
+} = {
+  home: { country: "+234", area: "806", number: "758-1927" },
+  work: { country: "+234", area: "802", number: "787-2415" },
+  fax: { country: "+234", area: "809", number: "819-4719" },
+};
+phones.home1;
