@@ -32,4 +32,11 @@ const success = [
 ] as const;
 const fail = ["error", new Error("Something went wrong!")] as const;
 
-const arr = [1, 2, 3] as const;
+function maybeGetUserInfo() {
+  if (outcome === "heads") {
+    return success;
+  } else {
+    return fail;
+  }
+}
+const outcome2 = maybeGetUserInfo();
