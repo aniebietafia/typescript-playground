@@ -40,3 +40,13 @@ function maybeGetUserInfo() {
   }
 }
 const outcome2 = maybeGetUserInfo();
+
+//* Working with union types
+//? Think critically: "AND" vs "OR", as it pertains to the contents of the set,
+//? vs the assumptions we can make about the value
+function printEven(even: Evens): void {}
+function printLowNumber(lowNum: OneThroughFive): void {}
+function printEvenNumbersUnder5(num: 2 | 4): void {}
+function printNumber(num: number): void {}
+
+let x = 5 as Evens | OneThroughFive;
