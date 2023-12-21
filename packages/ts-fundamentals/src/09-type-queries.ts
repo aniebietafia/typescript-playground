@@ -12,3 +12,18 @@ async function main() {
   ]);
   type ApiResponseType = typeof apiResponse;
 }
+
+// Indexed Access Types
+interface Car {
+  make: string;
+  model: string;
+  year: number;
+  color: {
+    red: string;
+    green: string;
+    blue: string;
+  };
+}
+let carColor: Car["color"];
+let carRedColorComponent: Car["color"]["red"];
+const carYearComponent: Car["year"] = 2010;
