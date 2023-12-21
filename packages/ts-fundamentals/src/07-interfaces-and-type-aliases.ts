@@ -48,3 +48,28 @@ type UserInfoOutcomeSuccess = readonly [
 ];
 
 type UserInfoOutcome = UserInfoOutcomeError | UserInfoOutcomeSuccess;
+
+// Interface
+interface Amount2 {
+  currency: string;
+  value: number;
+}
+
+function printAmount2(amount: Amount2) {
+  amount;
+}
+
+// Inheritance in interface
+function consumeFood(arg) {}
+
+class AnimalThatEats {
+  eat(food) {
+    consumeFood(food);
+  }
+}
+
+class Cat extends AnimalThatEats {
+  meow() {
+    return "meow";
+  }
+}
