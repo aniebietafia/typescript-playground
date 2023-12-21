@@ -59,3 +59,11 @@ evenOrLowNumber = 4;
 // printLowNumber(x)
 // printEvenNumbersUnder5(x)
 printNumber(x);
+
+//* Narrowing with type guards
+const [first, second] = outcome2;
+if (second instanceof Error) {
+  second;
+} else {
+  second;
+}
