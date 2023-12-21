@@ -105,3 +105,8 @@ class Dog implements AnimalLike {
     return "woof woof";
   }
 }
+
+// Recursive Types
+type NestedNumbers = number | NestedNumbers[];
+
+const values: NestedNumbers = [3, 4, [5, 6, [7], 59], 221];
