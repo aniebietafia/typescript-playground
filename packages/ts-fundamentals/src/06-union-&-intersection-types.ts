@@ -29,5 +29,7 @@ const outcome = flipCoin();
 const success = [
   "success",
   { name: "Aniebiet Afia", email: "aniebietafia@gmail.com" },
-];
+] as const;
 const fail = ["error", new Error("Something went wrong!")] as const;
+
+const arr = [1, 2, 3] as const;
