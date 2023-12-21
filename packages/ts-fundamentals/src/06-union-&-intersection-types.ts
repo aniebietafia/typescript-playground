@@ -74,3 +74,9 @@ if (first === "error") {
 } else {
   second;
 }
+
+// Intersection types
+let evenAndLowNumbers: Evens & OneThroughFive;
+// evenAndLowNumbers = 6
+// evenAndLowNumbers = 3
+evenAndLowNumbers = 4;
