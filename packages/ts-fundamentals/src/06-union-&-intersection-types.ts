@@ -67,3 +67,10 @@ if (second instanceof Error) {
 } else {
   second;
 }
+
+// Discriminated union
+if (first === "error") {
+  second;
+} else {
+  second;
+}
