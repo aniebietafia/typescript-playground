@@ -106,18 +106,3 @@ let twoD: number[][] = [
   [3, 4],
   [5, 6],
 ]; // 2-dimensional array
-
-// Nominal vs Structural
-class Car {
-  make: string;
-  model: string;
-  year: number;
-  isElectric: boolean;
-}
-
-class Truck {
-  make: string;
-  model: string;
-  year: number;
-  towingCapacity: number;
-}
