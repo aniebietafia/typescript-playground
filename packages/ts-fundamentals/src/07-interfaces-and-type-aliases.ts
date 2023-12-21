@@ -90,3 +90,18 @@ function careForHamster(h: Hamster) {
   h.getFurOrHairColor();
   h.squeak();
 }
+
+// `implements` keyword
+
+interface AnimalLike {
+  eat(food: string): void;
+}
+
+class Dog implements AnimalLike {
+  eat(food: string): void {
+    consumeFood(food);
+  }
+  bark() {
+    return "woof woof";
+  }
+}
