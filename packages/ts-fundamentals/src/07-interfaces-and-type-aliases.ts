@@ -110,3 +110,8 @@ class Dog implements AnimalLike {
 type NestedNumbers = number | NestedNumbers[];
 
 const values: NestedNumbers = [3, 4, [5, 6, [7], 59], 221];
+
+if (typeof values !== "number") {
+  values.push(42);
+  values.push([10, [16, [91], 12], 87]);
+}
