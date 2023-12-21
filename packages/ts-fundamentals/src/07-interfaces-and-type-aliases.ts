@@ -76,3 +76,17 @@ class Cat extends AnimalThatEats {
 const c = new Cat();
 c.eat("The cat is eating");
 c.meow();
+
+interface Animal {
+  isAlive(): boolean;
+}
+interface Mammal extends Animal {
+  getFurOrHairColor(): string;
+}
+interface Hamster extends Mammal {
+  squeak(): string;
+}
+function careForHamster(h: Hamster) {
+  h.getFurOrHairColor();
+  h.squeak();
+}
