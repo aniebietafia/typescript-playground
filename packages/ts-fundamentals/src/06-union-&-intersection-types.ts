@@ -24,3 +24,10 @@ function flipCoin(): "heads" | "tails" {
   return "tails";
 }
 const outcome = flipCoin();
+
+//? A more complicated example
+const success = [
+  "success",
+  { name: "Aniebiet Afia", email: "aniebietafia@gmail.com" },
+];
+const fail = ["error", new Error("Something went wrong!")] as const;
