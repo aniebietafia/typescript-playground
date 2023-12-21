@@ -50,3 +50,12 @@ function printEvenNumbersUnder5(num: 2 | 4): void {}
 function printNumber(num: number): void {}
 
 let x = 5 as Evens | OneThroughFive;
+
+evenOrLowNumber = 2;
+evenOrLowNumber = 3;
+evenOrLowNumber = 4;
+
+// printEven(x)
+// printLowNumber(x)
+// printEvenNumbersUnder5(x)
+printNumber(x);
