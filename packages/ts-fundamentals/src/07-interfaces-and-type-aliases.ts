@@ -60,10 +60,10 @@ function printAmount2(amount: Amount2) {
 }
 
 // Inheritance in interface
-function consumeFood(arg) {}
+function consumeFood(arg: string) {}
 
 class AnimalThatEats {
-  eat(food) {
+  eat(food: string) {
     consumeFood(food);
   }
 }
@@ -73,3 +73,4 @@ class Cat extends AnimalThatEats {
     return "meow";
   }
 }
+const c = new Cat();
