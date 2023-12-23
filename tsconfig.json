@@ -6,7 +6,8 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "declaration": true
+    "declaration": true,
+    "strictNullChecks": true
   },
   "include": ["*/**/src"]
 }

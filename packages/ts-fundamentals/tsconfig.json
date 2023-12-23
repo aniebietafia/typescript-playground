@@ -6,7 +6,7 @@
     "target": "ES2018",
     "moduleResolution": "Node",
     "noUnusedParameters": false,
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true
