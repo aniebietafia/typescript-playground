@@ -36,3 +36,8 @@ const date = new MyDateConstructor(1697923072611);
 // Function Overloads
 type FormSubmitHandler = (data: FormData) => void;
 type MessageHandler = (evt: MessageEvent) => void;
+
+function handleMainEvent(
+  elem: HTMLFormElement | HTMLIFrameElement,
+  handler: FormSubmitHandler | MessageHandler
+) {}
