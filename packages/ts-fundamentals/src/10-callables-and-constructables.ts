@@ -41,3 +41,9 @@ function handleMainEvent(
   elem: HTMLFormElement | HTMLIFrameElement,
   handler: FormSubmitHandler | MessageHandler
 ) {}
+
+// `this` types
+function myClickHandler(this: HTMLButtonElement, event: Event) {
+  this.disabled = true;
+}
+// myClickHandler(new Event("click"));
