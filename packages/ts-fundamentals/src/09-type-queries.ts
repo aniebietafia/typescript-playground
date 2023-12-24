@@ -49,3 +49,9 @@ let value: any = 5;
 let fixedString: string = (<number>value).toFixed(2); // type assertion
 
 fixedString = (value as number).toFixed(3); // type assertion
+
+const MyRule = CSSRule;
+MyRule.STYLE_RULE;
+const foo = new MyRule();
+
+type MyRuleType = typeof MyRule;
