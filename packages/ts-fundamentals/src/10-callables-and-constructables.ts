@@ -25,3 +25,14 @@ function invokeInFiveSeconds(callback: () => void) {
 const valuees: number[] = [];
 // invokeInFourSeconds(() => valuees.push(4));
 invokeInFiveSeconds(() => valuees.push(4));
+
+// Constructables
+interface DateConstructor {
+  new (value: number): Date;
+}
+let MyDateConstructor: DateConstructor = Date;
+const date = new MyDateConstructor(1697923072611);
+
+// Function Overloads
+type FormSubmitHandler = (data: FormData) => void;
+type MessageHandler = (evt: MessageEvent) => void;
