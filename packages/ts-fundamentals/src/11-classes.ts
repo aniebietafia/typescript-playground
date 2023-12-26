@@ -1,15 +1,19 @@
 // Classes
 
 class Car {
-  static nextSerialNumber = 100;
-  static generateNextSerialNumber() {
+  private static nextSerialNumber = 100;
+  private static generateNextSerialNumber() {
     return this.nextSerialNumber++;
   }
 
   make: string;
   model: string;
   year: number;
-  serialNumber = Car.generateNextSerialNumber();
+
+  private _serialNumber = Car.generateNextSerialNumber();
+  protected get serialNumber() {
+    return this._serialNumber;
+  }
 
   constructor(make: string, model: string, year: number) {
     this.make = make;
@@ -23,3 +27,4 @@ class Car {
 }
 
 let sedan = new Car("Honda", "Accord", 2017);
+// Car.generateNextSerialNumber()
