@@ -1,10 +1,10 @@
 // Nominal vs Structural
-class Car {
-  make: string;
-  model: string;
-  year: number;
-  isElectric: boolean;
-}
+// class Car {
+//   make: string;
+//   model: string;
+//   year: number;
+//   isElectric: boolean;
+// }
 
 class Truck {
   make: string;
