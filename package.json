@@ -40,5 +40,9 @@
   "resolutions": {
     "@types/eslint": "8.44.3",
     "@types/react": "18.2.28"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21"
   }
 }
